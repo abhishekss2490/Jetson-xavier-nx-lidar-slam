@@ -6,15 +6,6 @@ Real-time 3D SLAM implementation using FAST-LIO and Livox Mid-360 LiDAR on a Jet
 
 This repository documents the successful implementation of FAST-LIO SLAM (Simultaneous Localization and Mapping) on a Jetson Xavier NX with a Livox Mid-360 LiDAR. The system performs both mapping and real-time localization, running entirely on the Jetson's onboard computing resources.
 
-## Results
-
-### Real-time Localization
-![Localization Screenshot 1](visualization/localization1.jpg)
-![Localization Screenshot 2](visualization/localization2.jpg)
-
-### 3D Point Cloud Maps
-![Map Visualization](visualization/map_visualization1.jpg)
-
 ## Hardware
 - Jetson Xavier NX (Ubuntu 20.04)
 - Livox Mid-360 LiDAR
