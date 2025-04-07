@@ -19,6 +19,17 @@ The implementation uses:
 - FAST-LIO for SLAM
 - Livox ROS Driver 2 for LiDAR interface
 
+## Performance Notes
+
+When running FAST-LIO on the Jetson Xavier NX, we encountered several performance considerations:
+
+- **Visualization Impact**: Running RViz visualization alongside SLAM processing caused significant frame rate drops on the Jetson. For optimal SLAM performance, we ran with `rviz:=false` during mapping.
+  
+- **Resource Optimization**: For best results, we disabled the GUI environment and set the Jetson to maximum performance mode:
+  ```bash
+  sudo nvpmodel -m 0
+  sudo jetson_clocks
+
 ### Commands
 To run the system:
 ```bash
