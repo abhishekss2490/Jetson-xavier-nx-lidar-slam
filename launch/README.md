@@ -1,7 +1,7 @@
 # Launch Files
 
 This directory contains the ROS2 launch files used to run the FAST-LIO SLAM system.
-
+specifically used for jetson xavier nx 
 ## Files
 
 - **mapping.launch.py**: Main launch file for FAST-LIO
